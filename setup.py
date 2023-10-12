@@ -7,11 +7,11 @@ __version__ = "0.0.0"
 
 REPO_NAME = "DeepLearning_MLOPS_AWS"
 AUTHOR_USER_NAME = "ChiranthSH007"
-SRC_NAME = "cnnClassifier"
+SRC_REPO = "cnnClassifier"
 AUTHOR_EMAIL = "chiranthsh007@gmail.com"
 
 setuptools.setup(
-    name=REPO_NAME,
+    name=SRC_REPO,
     version=__version__,
     author=AUTHOR_USER_NAME,
     author_email=AUTHOR_EMAIL,

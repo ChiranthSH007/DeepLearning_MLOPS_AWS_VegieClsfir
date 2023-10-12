@@ -18,7 +18,6 @@ class DataIngestion:
             f"Data Set File Size is : {get_size(Path(self.config.local_data_file))}")
 
     def extract_zip_file(self):
-
         unzip_path = self.config.unzip_dir
         os.makedirs(unzip_path, exist_ok=True)
         with zipfile.ZipFile(self.config.local_data_file, 'r')as zip_ref:

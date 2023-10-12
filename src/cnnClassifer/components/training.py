@@ -40,7 +40,7 @@ class Training:
             **dataflow_kwargs
         )
 
-        if self.config.params_is_augumentation:
+        if self.config.params_is_augmentation:
             train_datagenerator = tf.keras.preprocessing.image.ImageDataGenerator(
                 rotation_range=40,
                 horizontal_flip=True,

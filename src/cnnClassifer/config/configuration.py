@@ -1,6 +1,6 @@
 import os
 from cnnClassifer.constants import *
-from cnnClassifer.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig, PrepareCallbacksConfig, TraningConfig
+from cnnClassifer.entity.config_entity import DataIngestionConfig, EvaluationConfig, PrepareBaseModelConfig, PrepareCallbacksConfig, TraningConfig
 from cnnClassifer.utils.common import read_yaml, create_directories
 
 # Perform the Configurations tasks for the dataset defined already
@@ -85,8 +85,19 @@ class ConfigurationManager:
             training_data=Path(training_data),
             params_batch_size=params.BATCH_SIZE,
             params_epochs=params.EPOCHS,
-            params_is_augumentation=params.AUGUMENTATION,
+            params_is_augmentation=params.AUGMENTATION,
             params_image_size=params.IMAGE_SIZE
         )
 
         return training_config
+
+    def get_validation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_to_model=Path("artifacts/training/model.h5"),
+            training_data=Path("artifacts/data_ingestion/Vegetable Images"),
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+        )
+
+        return eval_config

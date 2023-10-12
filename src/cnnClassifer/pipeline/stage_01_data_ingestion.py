@@ -6,6 +6,8 @@ from cnnClassifer import logger
 STAGE_NAME = "Data Ingestion Stage"
 
 # Pipeline for performing data ingestion task
+
+
 class DataIngestionTrainingPipleine:
     def __init__(self) -> None:
         pass
@@ -16,6 +18,7 @@ class DataIngestionTrainingPipleine:
         data_ingestion = DataIngestion(config=data_ingestion_config)
         data_ingestion.data_size()
         data_ingestion.extract_zip_file()
+
 
 # To call Seperatly when required
 if __name__ == '__main__':

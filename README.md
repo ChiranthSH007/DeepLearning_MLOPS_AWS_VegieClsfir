@@ -1,6 +1,52 @@
 # DeepLearning_MLOPS_AWS
+## Project Description
 
-## Workflows
+### Overview:
+The Vegetable Classification project aims to employ deep learning, specifically Convolutional Neural Networks (CNNs), for the classification of various types of vegetables based on images. The project will utilize the VGG16 architecture as the base model, implement data augmentation techniques to enhance model performance, and deploy the model as a web application on Amazon Web Services (AWS) Elastic Compute Cloud (EC2) and Elastic Container Registry (ECR). HTML, CSS, and Flask will be used to create the web interface, while GitHub Actions will be employed for Continuous Integration and Continuous Deployment (CI/CD). Docker containers will be utilized to streamline access and scalability.
+
+### Key Features:
+
+1. Data Collection and Preprocessing:
+        Gather a comprehensive dataset of vegetable images, ensuring accurate labeling and data organization.
+        Preprocess and augment the dataset, including resizing, normalization, and applying transformations to improve model robustness.
+
+2. Model Development:
+        Utilize the VGG16 architecture, a well-established CNN pretrained on ImageNet, as the foundational model.
+        Fine-tune the top layers of the VGG16 model to adapt it to the vegetable classification task.
+        Train the model using the preprocessed dataset.
+
+3. Web Application Creation:
+        Build an intuitive web application using HTML and CSS, allowing users to upload images for classification.
+        Implement Flask, a Python web framework, to handle image uploads, perform model inference, and display classification results.
+        Deploy the web application on an AWS EC2 instance for public access.
+
+4. Continuous Integration and Deployment:
+        Establish CI/CD pipelines using GitHub Actions to automate testing and deployment workflows.
+        Ensure that code changes are thoroughly tested and deployed to the AWS server, ensuring a reliable and robust application.
+
+5. Docker Containers:
+        Containerize the web application and its dependencies using Docker, simplifying deployment and scalability.
+        This enables straightforward deployment and scaling as needed.
+
+### Project Workflow:
+
+1. Data Collection and Preprocessing: Collect and preprocess a diverse dataset of vegetable images, properly labeling and augmenting the data.
+2. Model Building: Utilize the VGG16 architecture, adapt it for vegetable classification, and train it using the preprocessed dataset.
+3. Web Application Development: Create a user-friendly web application using HTML, CSS, and Flask. Implement features for image uploads, model inference, and results presentation.
+4. CI/CD with GitHub Actions: Set up CI/CD pipelines on GitHub to automate testing and deployment of code changes.
+5. Docker Containerization: Containerize the web application using Docker for ease of deployment and scalability.
+6.  Deployment on AWS: Host the web application on an AWS EC2 instance to make it accessible to users.
+
+### Expected Outcomes:
+
+- A user-friendly web application for uploading and classifying vegetable images.
+- Precise and efficient vegetable classification using the VGG16-based deep learning model.
+- Automated CI/CD pipeline for streamlined development and deployment.
+- Docker containers for easy scaling and access.
+- A fully deployed web application on an AWS EC2 instance.
+
+
+## Development Workflows
 
 1. Update config.yaml
 2. Update secrets.yaml [Optional]

@@ -1,4 +1,4 @@
-# DeepLearning_MLOPS_AWS
+# Vegetable_Classification_DeepLearning_MLOPS_AWS
 ## Project Description
 
 ### Overview:

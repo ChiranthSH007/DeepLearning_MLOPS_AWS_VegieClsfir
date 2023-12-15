@@ -24,7 +24,7 @@ def home():
 
 
 @app.route("/train", methods=['GET', 'POST'])
-@cross_origin
+@cross_origin()
 def trainRoute():
     os.system("python main.py")
     return "Training done successfully"
